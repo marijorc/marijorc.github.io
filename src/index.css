@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* add margin to the right for buttons with icons */
+button > svg {
+  margin-right: 5px;
+}

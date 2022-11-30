@@ -65,11 +65,11 @@ function Home() {
     <div className="flex w-full mb-5 justify-center">
       <div className="flex w-5/6 flex-col">
         <div className="flex flex-col">
-          <p className="font-bold text-gray-400 underline decoration-2 underline-offset-8">Hello!</p>
+          <p className="font-bold text-gray-800 underline decoration-2 underline-offset-8">Hello!</p>
 
-          <p className="mt-3 mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+          <p className="mt-3 mb-6 text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
 
-          <p className="font-bold text-gray-400 underline decoration-2 underline-offset-8 mb-6">Recent Projects</p>
+          <p className="font-bold text-gray-800 underline decoration-2 underline-offset-8 mb-6">Recent Projects</p>
         </div>
 
         <div className="flex w-full justify-center flex-wrap gap-6">

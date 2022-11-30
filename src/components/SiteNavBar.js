@@ -3,20 +3,20 @@ import classNames from "classnames";
 
 function SiteNavBar() {
 
-  const sharedClassName = "inline-block text-sm px-4 py-2 leading-none text-gray-400 hover:border-transparent hover:text-teal-500 hover:text-orange-500 mt-4 lg:mt-0"
-  const isActiveClassName = "font-bold text-orange-600"
+  const sharedClassName = "inline-block text-sm px-4 py-2 leading-none text-gray-600 hover:border-transparent hover:text-orange-500 mt-4 lg:mt-0";
 
   const assignStyle = ({isActive}) => {
     return classNames(
       sharedClassName,
-      isActive && isActiveClassName, 
+      isActive && "font-bold", 
+      isActive && "text-orange-500", 
     )
   }
   
   return(
     <nav className="flex w-full mb-5 justify-center">
-      <div className="flex items-center justify-between flex-wrap py-4 border-b-2 border-b-gray-400 w-5/6">
-        <div className="flex items-center flex-shrink-0 text-gray-400">
+      <div className="flex items-center justify-between flex-wrap py-4 border-b-2 border-b-gray-800 w-5/6">
+        <div className="flex items-center flex-shrink-0 text-orange-600">
           <span className="font-semibold text-l tracking-tight">Maria Jose Reyes Portfolio</span>
         </div>
         {/* <div className="block lg:hidden">
@@ -43,18 +43,6 @@ function SiteNavBar() {
         </div>
       </div>
     </nav>
-
-    // <nav className="flex w-screen justify-center">
-    //   <div className="flex space-x-4 w-5/6 border-b-2 border-b-gray-400 justify-between">
-    //     <div className="ml-4 py-2">
-    //       <p className="truncate font-bold text-gray-400">Maria Jose Reyes Portfolio</p>
-    //     </div>
-    //     <div className="py-2">
-    //       <NavLink to="/" className={assignStyle}>Home</NavLink>
-    //       <NavLink to="/about" className={assignStyle}>About</NavLink>
-    //     </div>
-    //   </div>
-    // </nav>
   );
 }
 
